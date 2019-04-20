@@ -7,6 +7,19 @@ JavaScript is a programming language for the web. It is used to manipulate HTML 
 ## Installation
 No installation is required. Most, if not all, modern search engines can run Javascript code.
 
+## Environment
+There are many development environment setups for JavaScript development. The most common and simplest approach would be using a HTML file and display it on your search engine.
+
+![screenshot](/screenshots/screenshot1.png?raw=true "search engine example")
+
+There are online coding environment for JS development too, such as [JSFiddle](https://jsfiddle.net/) and [CodePen](https://codepen.io/pen/).
+
+![screenshot](/screenshots/screenshot2.png?raw=true "codepen example")
+
+The easiest approach that I personally like the most would be using [Node.js](https://nodejs.org/en/) which allows you to run your JS code in your terminal.
+
+![screenshot](/screenshots/screenshot3.png?raw=true "nodejs example")
+
 ## Basics
 ### Comment
 ```
@@ -31,8 +44,12 @@ var myName = "Andy"
 ```
 
 We can also declare variables with "let" and "const". Their types will also be determined at run time.
-- let: create local variables that are only available in the scope that they are declared.
-- const: create variables whose values cannot be changed once declared.
+
+- var: create variables that are available in the nearest **function** scope where they are declared.
+- let: create local variables that are only available in the **block** scope where they are declared.
+- const: create variables whose values cannot be changed once declared. However, you can mutate data types such as array; changing the values in an array declared as const would be valid.
+
+Read this excellent Stack Overflow answer on "var" v.s "let" [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var).
 
 ### Data Type
 Javascript has data types such as undefined, null, boolean, string, symbol, number, object, etc.
@@ -121,7 +138,7 @@ There are two types of equality operators, and they are == and ===. The former w
 
 The respective inequality operators are != and !==.
 
-### Something Weird...
+### Language Features
 Variable inside of the function becomes global if it is declared without any keywords
 
 ```
@@ -137,4 +154,18 @@ typeof is a keyword for determining the type of a variable. It will return a str
 ```
 temp = 5;
 console.log(typeof temp); // this will print out "number".
+```
+
+---
+Object.freeze() can be used to prevent object to be changed.
+
+---
+Arrow function is a quick way to write anonymous functions.
+```
+var myConcat = function(arr1, arr2) {
+  return arr1.concat(arr2);
+}
+
+// this is the same as
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
 ```
