@@ -119,11 +119,44 @@ fruit.hasOwnProperty(recommended);
 ```
 
 ### Function
+#### Declaration
 To declare a function it can be as easy as...
 ```
 function hello() {
   console.log("Hello!")
 }
+```
+
+#### Default Parameter
+Default parameters are pre-defined parameters with values. If they are not passed in as arguments, their default values are used.
+```
+function increment(num1, num2 = 1) {
+  return num1 + num2;
+}
+increment(5);     // returns 6
+increment(5, 2);  // returns 7
+```
+
+#### Rest Operator
+Rest operator allows functions to have any number of parameters by converting inputs to an array. To use the operator, we simply place three dots in front of the parameter.
+```
+function add(...args) {
+	var total = 0;
+	for (var i = 0; i < args.length; i++) {
+		total += args[i];
+	}
+	return total;
+}
+```
+
+#### Spread Operator
+Spread operator spreads out each individual element of an array. It looks exactly like the rest operator.
+```
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+  arr2 = [...arr1];   // do a deep copy of arr1
+})();
 ```
 
 ## Advanced
@@ -168,4 +201,23 @@ var myConcat = function(arr1, arr2) {
 
 // this is the same as
 var myConcat = (arr1, arr2) => arr1.concat(arr2);
+```
+
+---
+Destructuring assignment is a neat way to assign variables from objects.
+```
+var voxel = {x:13, y: 24, z: 35};
+
+// this assigns the values of x, y to a, b respectively.
+const {x:a, y:b} = voxel;
+```
+
+We can also do nested destructuring assigment.
+```
+const LOCAL_FORECAST = {
+  today: {min: 72, max:83};
+  tomorrow: {min: 73.3, max 84.6};
+};
+
+const {tomorrow: {max: maxOfTomorrow}} = LOCAL_FORECAST;
 ```
