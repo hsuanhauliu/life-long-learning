@@ -2,22 +2,19 @@
 This notebook was written while following this [Youtube video](https://www.youtube.com/watch?v=PkZNo7MFNFg).
 
 ## What is JavaScript?
-JavaScript is a programming language for the web. It is used to manipulate HTML and CSS, which are the two essential elements of a web page. Read more about Javascript [here](https://www.w3schools.com/whatis/whatis_js.asp).
+JavaScript is a programming language for the web. It was designed to do frontend programming and manipulate web elements. Read more about Javascript [here](https://www.w3schools.com/whatis/whatis_js.asp).
 
 ## Installation
 No installation is required. Most, if not all, modern search engines can run Javascript code.
 
 ## Environment
-There are many development environment setups for JavaScript development. The most common and simplest approach would be using a HTML file and display it on your search engine.
-
+There are many setups or workflows one can use for JavaScript development. The most common and simplest approach would be using a HTML file and display it on your search engine.
 ![screenshot](screenshots/screenshot1.png "search engine example")
 
-There are online coding environment for JS development too, such as [JSFiddle](https://jsfiddle.net/) and [CodePen](https://codepen.io/pen/).
-
+There are online coding environments for JS development too, such as [JSFiddle](https://jsfiddle.net/) and [CodePen](https://codepen.io/pen/).
 ![screenshot](screenshots/screenshot2.png "codepen example")
 
-The easiest approach that I personally like the most would be using [Node.js](https://nodejs.org/en/) which allows you to run your JS code in your terminal.
-
+The easiest approach that I personally like the most would be using [Node.js](https://nodejs.org/en/), which allows you to run your JS code in the terminal.
 ![screenshot](screenshots/screenshot3.png "nodejs example")
 
 ## Basics
@@ -31,14 +28,14 @@ This is another way to do it
 ```
 
 ### Print (To Console)
-Javascript's equivalent of print function is called console.log().
+The JavaScript equivalent of print function is called console.log().
 ```
 // This will print whatever string that is passed in on the console.
 console.log("hello world");
 ```
 
 ### Variable Declaration
-Javascript can determine a data type dynamically using the "var" keyword.
+JavaScript can determine a data type dynamically using the "var" keyword.
 ```
 var myName = "Andy"
 ```
@@ -52,13 +49,13 @@ We can also declare variables with "let" and "const". Their types will also be d
 Read this excellent Stack Overflow answer on "var" v.s "let" [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var).
 
 ### Data Type
-Javascript has data types such as undefined, null, boolean, string, symbol, number, object, etc.
+There are data types such as undefined, null, boolean, string, symbol, number, object, etc.
 
 #### Boolean
-The boolean values in Javascript are lowercase.
+The boolean values in JavaScript are lowercase.
 
 #### String
-We can declare strings using single or double quotation marks.
+We can declare strings using single or double quotation marks, but must be consistent.
 ```
 var s1 = 'this is valid';
 var s2 = "this is also valid";
@@ -71,11 +68,22 @@ s[0] = 'a'  // this will cause an error
 ```
 
 #### Array
-Array behaves like Python list. It can contain data of different types.
+Array behaves like Python list. It can contain data of different types and highly flexible.
 ```
 var ourArray = ["the universe", 42];
 var multiArray[["the world", 13], ["the earth", 32]];
 ```
+
+### Equality Operator & Strict Equality Operator
+There are two types of equality operators, and they are == and ===. The former will attempt to convert both data to the same type before comparing their values, whereas the latter does not.
+```
+3 == 3    // true
+3 == '3'  // true
+3 === 3   // true
+3 === '3' // false
+```
+
+The respective inequality operators are != and !==.
 
 #### :warning:Object
 ##### Declaration
@@ -103,18 +111,18 @@ console.log(fruit["my description"]);
 ##### Insertion & Deletion
 We can add new properties to objects as well.
 ```
-// insert new properties
+// Insert new properties
 fruit.recommended = true;
 fruit[healthy] = true;
 
-// delete properties
+// Delete properties
 delete fruit[recommended];
 delete fruit.healthy;
 ```
 
 ##### Others
+We can check if the object has the specified property using a function.
 ```
-// check if the object has the specified property
 fruit.hasOwnProperty(recommended);
 ```
 
@@ -162,41 +170,30 @@ let arr2;
 ### Import and Export
 Import & export allow us to reuse code from another file.
 ```
-// main file
+// In the main file
 import  { capitalizeString } from "./string_function"
 
 // To import everything from another file, we can use *
-// import * as something from "./string_function"
+import * as something from "./string_function"
 ```
 
-In the "string_function.js" file (same directory), we do
 ```
+// In the "string_function.js" file (same directory)
 export const capitalizeString = str => str.toUpperCase()
 ```
 
 If there is only one thing we want to import & export from a file, we can use export default.
 ```
-// in the main file
+// In the main file
 import subtract from "./math_function"
 ```
 
 ```
-// in the math_function.js file
+// In the math_function.js file
 export default function subtract(x, y) { return x - y }
 ```
 
-### Equality Operator & Strict Equality Operator
-There are two types of equality operators, and they are == and ===. The former will attempt to convert both data to the same type before comparing their values, whereas the latter does not.
-```
-3 == 3    // true
-3 == '3'  // true
-3 === 3   // true
-3 === '3' // false
-```
-
-The respective inequality operators are != and !==.
-
-### Class
+### :warning: Class
 JavaScript has classes too which makes code reuse and data management a lot easier. It provides features such as constructor, getter, setter, etc.
 ```
 function makeClass() {
@@ -255,7 +252,7 @@ var myConcat = function(arr1, arr2) {
   return arr1.concat(arr2);
 }
 
-// this is the same as
+// This is the same as
 var myConcat = (arr1, arr2) => arr1.concat(arr2);
 ```
 
@@ -264,7 +261,7 @@ Destructuring assignment is a neat way to assign variables from objects.
 ```
 var voxel = {x:13, y: 24, z: 35};
 
-// this assigns the values of x, y to a, b respectively.
+// This assigns the values of x, y to a, b respectively.
 const {x:a, y:b} = voxel;
 ```
 
@@ -282,7 +279,7 @@ Arrays can also be destructured, but the variables are assigned in order.
 ```
 const[a, b, c] = [1, 2, 3, 4, 5];   // a = 1, b = 2, c = 3
 
-// if we want to skip elements, we can do this
+// If we want to skip elements, we can do this
 const[, , , x] = [1, 2, 3, 4, 5];   // x = 4
 ```
 
