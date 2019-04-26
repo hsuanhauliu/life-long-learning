@@ -9,12 +9,15 @@ No installation is required. Most, if not all, modern search engines can run Jav
 
 ## Environment
 There are many setups or workflows one can use for JavaScript development. The most common and simplest approach would be using a HTML file and display it on your search engine.
+
 ![screenshot](screenshots/screenshot1.png "search engine example")
 
 There are online coding environments for JS development too, such as [JSFiddle](https://jsfiddle.net/) and [CodePen](https://codepen.io/pen/).
+
 ![screenshot](screenshots/screenshot2.png "codepen example")
 
 The easiest approach that I personally like the most would be using [Node.js](https://nodejs.org/en/), which allows you to run your JS code in the terminal.
+
 ![screenshot](screenshots/screenshot3.png "nodejs example")
 
 ## Basics
@@ -48,7 +51,7 @@ We can also declare variables with "let" and "const". Their types will also be d
 
 Read this excellent Stack Overflow answer on "var" v.s "let" [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var).
 
-### Data Type
+### Data Types
 There are data types such as undefined, null, boolean, string, symbol, number, object, etc.
 
 #### Boolean
@@ -85,7 +88,7 @@ There are two types of equality operators, and they are == and ===. The former w
 
 The respective inequality operators are != and !==.
 
-#### :warning:Object
+#### :warning: Objects
 ##### Declaration
 One can declare a Javascript object like so.
 ```
@@ -126,7 +129,7 @@ We can check if the object has the specified property using a function.
 fruit.hasOwnProperty(recommended);
 ```
 
-### Function
+### Functions
 #### Declaration
 To declare a function it can be as easy as...
 ```
@@ -145,6 +148,7 @@ increment(5);     // returns 6
 increment(5, 2);  // returns 7
 ```
 
+### Special Operators
 #### Rest Operator
 Rest operator allows functions to have any number of parameters by converting inputs to an array. To use the operator, we simply place three dots in front of the parameter.
 ```
@@ -193,7 +197,7 @@ import subtract from "./math_function"
 export default function subtract(x, y) { return x - y }
 ```
 
-### :warning: Class
+### :warning: Classes
 JavaScript has classes too which makes code reuse and data management a lot easier. It provides features such as constructor, getter, setter, etc.
 ```
 function makeClass() {
