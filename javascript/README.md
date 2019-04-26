@@ -159,7 +159,32 @@ let arr2;
 })();
 ```
 
-## Advanced
+### Import and Export
+Import & export allow us to reuse code from another file.
+```
+// main file
+import  { capitalizeString } from "./string_function"
+
+// To import everything from another file, we can use *
+// import * as something from "./string_function"
+```
+
+In the "string_function.js" file (same directory), we do
+```
+export const capitalizeString = str => str.toUpperCase()
+```
+
+If there is only one thing we want to import & export from a file, we can use export default.
+```
+// in the main file
+import subtract from "./math_function"
+```
+
+```
+// in the math_function.js file
+export default function subtract(x, y) { return x - y }
+```
+
 ### Equality Operator & Strict Equality Operator
 There are two types of equality operators, and they are == and ===. The former will attempt to convert both data to the same type before comparing their values, whereas the latter does not.
 ```
@@ -170,6 +195,30 @@ There are two types of equality operators, and they are == and ===. The former w
 ```
 
 The respective inequality operators are != and !==.
+
+### Class
+JavaScript has classes too which makes code reuse and data management a lot easier. It provides features such as constructor, getter, setter, etc.
+```
+function makeClass() {
+  class Thermostat {
+    constructor(temp) {
+      this._temp = 5/9 * (temp - 32);
+    }
+    get temperture() {
+      return this._temp;
+    }
+    set temperture(updatedTemp) {
+      this._temp = updatedTemp;
+    }
+  }
+  return Thermostat;
+}
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperture;    // use getter function
+thermos.temperture = 26;          // use setter function
+```
 
 ### Language Features
 Variable inside of the function becomes global if it is declared without any keywords
@@ -191,6 +240,13 @@ console.log(typeof temp); // this will print out "number".
 
 ---
 Object.freeze() can be used to prevent object to be changed.
+
+---
+Strict mode prevents users to use undeclared variables. It is enabled with the string literal "use strict".
+```
+"use strict"
+x = 3.14;   // this will throw an error because it's undeclared
+```
 
 ---
 Arrow function is a quick way to write anonymous functions.
@@ -220,4 +276,47 @@ const LOCAL_FORECAST = {
 };
 
 const {tomorrow: {max: maxOfTomorrow}} = LOCAL_FORECAST;
+```
+
+Arrays can also be destructured, but the variables are assigned in order.
+```
+const[a, b, c] = [1, 2, 3, 4, 5];   // a = 1, b = 2, c = 3
+
+// if we want to skip elements, we can do this
+const[, , , x] = [1, 2, 3, 4, 5];   // x = 4
+```
+
+We can combine destructuring assignment and the rest operator to do something interesting.
+```
+const source = [1, 2, 3, 4, 5, 6, 7];
+
+const [, , ...newArr] = source;   // newArr = [3, 4, 5, 6, 7];
+```
+
+Destructuring assignment can be used to pass specific elements in an object to a function. This is commonly used when doing API calls since objects often contain a lot more data than we need.
+```
+const stat = {
+  max: 100,
+  median: 60,
+  average: 56,
+  min: 20
+}
+
+function half( {max, min}) {
+  return (max + min) / 2;
+}
+```
+
+---
+Template literal is flexible way to create strings in JavaScript. It has three major advantages over using quotation marks. It allows
+1. multi-line string,
+2. quotation marks inside of the string without using escape character,
+3. using variable directly by calling ${variable-name}.
+
+```
+const example = "example"
+const num = 1
+
+const str = `This is ${num} ${example}.
+Pretty neat huh?`
 ```
