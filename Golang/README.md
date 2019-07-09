@@ -64,7 +64,7 @@ export GOPATH=$HOME/go
 ```
 
 ### Write Your Go Program
-3. Each Go program should have its own repository(folder) in the go/src folder.
+Each Go program should have its own repository(folder) in the go/src folder.
 
 Create a folder to store codes that will be pushed to Github.
 ```
@@ -104,3 +104,5 @@ export $GOPATH/bin
 
 ### Useful Go commands
 go run <program-name>: runs the program directly.
+go build: compile your program into an executable
+go install: install the executable in the bin/ folder.
