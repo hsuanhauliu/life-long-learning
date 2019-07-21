@@ -26,5 +26,6 @@ python HDR.py
 ```
 
 ### Screenshot:
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/handwritten-digit-recognition/screenshot1.jpg "screenshot")
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/handwritten-digit-recognition/screenshot2.jpg "screenshot")
+![screenshot](screenshot1.jpg "screenshot")
+
+![screenshot](screenshot2.jpg "screenshot")

@@ -14,4 +14,4 @@ Our tests consistently match our expected result.
 - The number of iterations can be changed to your liking.
 
 ### Screenshot
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/random/monty-hall-problem/screenshot.png "screenshot")
+![screenshot](screenshot.png "screenshot")

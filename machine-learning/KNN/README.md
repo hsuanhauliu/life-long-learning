@@ -24,4 +24,4 @@ The program will then query for a set of x and y value. After the user has input
 - The program only assumes 2 categories ('g' label for green color and 'b' for blue).
 
 ### Screenshot:
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/KNN/screenshot.jpg "screenshot")
+![screenshot](screenshot.jpg "screenshot")

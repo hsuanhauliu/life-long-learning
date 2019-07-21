@@ -6,4 +6,4 @@ A simple demonstration of perceptron. Read why perceptron works [here](https://h
 ![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/perceptron/screenshot.jpg "screenshot")
 
 ### Result
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/perceptron/screenshot2.jpg "screenshot")
+![screenshot](screenshot2.jpg "screenshot")

@@ -7,4 +7,4 @@ A simply demonstration of password generation using Python3.
 3. Enter `python password_generator.py` to start the program.
 
 ### Screenshot
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/random/password-generator/screenshot.png "screenshot")
+![screenshot](screenshot.png "screenshot")
