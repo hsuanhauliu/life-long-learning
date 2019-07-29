@@ -1,4 +1,4 @@
-# Python
+# Python Notes
 
 ## Resources
 - [Documentation](https://docs.python.org/3/)
@@ -6,11 +6,12 @@
 - [Pypi](https://pypi.org/): a repository of libraries & software for Python.
 
 ### Tutorial
-[Python How to Program](https://www.youtube.com/watch?list=PL3072C720775B213E&v=fdv1NlEZWro)
-[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+- [Python How to Program](https://www.youtube.com/watch?list=PL3072C720775B213E&v=fdv1NlEZWro)
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 ### Advanced
-[James Powell - So you want to be a Python expert?](https://www.youtube.com/watch?v=cKPlPJyQrt4)
+- [James Powell - So you want to be a Python expert?](https://www.youtube.com/watch?v=cKPlPJyQrt4)
+- [The Hitchhiker’s Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/index.html)
 
 ## Libraries
 ### Standard Libraries
