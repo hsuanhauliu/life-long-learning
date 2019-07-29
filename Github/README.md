@@ -2,10 +2,14 @@
 
 ## Resources
 
+### Basics
 - [Branching Standards and conventions](https://gist.github.com/digitaljhelms/4287848)
 - [Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 - [Style Guide](https://github.com/agis/git-style-guide)
+
+### Open Source
 - [Up for Grab - Open Source Project List](https://up-for-grabs.net/#/)
+- [Licensing a repository](https://help.github.com/en/articles/licensing-a-repository)
 - [Explore - Discover Projects on Github](https://github.com/explore)
 
 ## Useful Commands

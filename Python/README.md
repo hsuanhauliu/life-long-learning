@@ -11,7 +11,14 @@
 
 ### Advanced
 - [James Powell - So you want to be a Python expert?](https://www.youtube.com/watch?v=cKPlPJyQrt4)
+
+## Package Development
 - [The Hitchhiker’s Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/index.html)
+- [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
+- [Why and How to make a Requirements.txt](https://medium.com/@boscacci/why-and-how-to-make-a-requirements-txt-f329c685181e)
+- [What is setup.py?](https://stackoverflow.com/questions/1471994/what-is-setup-py)
+- [python setup.py uninstall](https://stackoverflow.com/questions/1550226/python-setup-py-uninstall)
+
 
 ## Libraries
 ### Standard Libraries
