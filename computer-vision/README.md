@@ -9,7 +9,10 @@ _"Computer Vision is an overlapping field drawing on concepts from areas such as
 - Calculus
 - Matrix Calculus
 
-## Career
+## Beginner
+- [Intuitively Understanding Convolutions for Deep Learning](https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1)
+- [Intuition Behind Max Pooling](https://www.quora.com/What-is-the-intuition-as-to-why-max-pooling-works-And-why-choose-the-largest-element-for-the-down-sizing)
+- [Intuitive Understanding of 1-D, 2-D, and 3-D Convolutions](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
 - [7 Steps to Understanding Computer Vision](https://www.kdnuggets.com/2016/08/seven-steps-understanding-computer-vision.html)
 - [How To Build A Career in Computer Vision](https://www.analyticsindiamag.com/how-to-build-a-career-in-computer-vision/)
 
