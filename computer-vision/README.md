@@ -27,7 +27,9 @@ _"Computer Vision is an overlapping field drawing on concepts from areas such as
 - [OpenCV](https://github.com/opencv/opencv): open source Computer Vision library.
 - [opencv_contrib](https://github.com/opencv/opencv_contrib): repository for OpenCV's extra modules.
 - [TensorFlow](https://github.com/tensorflow/tensorflow): an open source Machine Learning framework developed by Google.
+- [Keras](https://github.com/keras-team/keras): a high-level neural networks API.
 - [PyTorch](https://github.com/pytorch/pytorch): tensors and dynamic neural networks in Python with strong GPU acceleration developed by Facebook.
+- [dlib](http://dlib.net/): a toolkit for making real world machine learning and data analysis applications in C++.
 
 
 ## Popular Dataset
