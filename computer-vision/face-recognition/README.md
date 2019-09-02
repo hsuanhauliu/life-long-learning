@@ -1,9 +1,19 @@
-# Face Recognition Notebook
+# Facial Recognition Notebook
 ## Goal
 Verify one's identity by extracting features and comparing the feature vector with ground truth in the database.
 
 ## Challenges
+### Technical Challenges
 Regular CNN is not flexible enough when it comes to expanding the number of classes for the output. If one wishes to verify the identities of new people for example, a new network will have to be trained. This also requires a lot of data for training for each class. Therefore, we need a better way that requires less training data (for each individual class) and expandable method.
+
+### Moral Challenges
+[![facial-recognition](http://img.youtube.com/vi/kiXiNcZLqV8/0.jpg)](http://www.youtube.com/watch?v=kiXiNcZLqV8 "Is facial recognition technology too powerful?")
+
+## Pipeline
+Face detection -> facial alignment -> encoding face -> classification
+
+## Basic Tutorials
+- [Face Recognition with Deep Learning](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78)
 
 ## Vocabularies
 - Face embedding: a rich low-dimensional feature representation (vector) of the a face.
@@ -14,16 +24,20 @@ Regular CNN is not flexible enough when it comes to expanding the number of clas
 - Anchor: the ground truth image used to verify one's identity.
 
 ## One-Shot Learning Approach
+### Tutorials
 - [One-Shot Learning for Face Recognition by Jason Brownlee](https://machinelearningmastery.com/one-shot-learning-with-siamese-networks-contrastive-and-triplet-loss-for-face-recognition/)
-- [Siamese Network Tutorial by Andrew Ng](https://www.youtube.com/watch?v=6jfw8MuKwpI)
-- [Triplet Loss Tutorial by Andrew Ng](https://www.youtube.com/watch?v=d2XB5-tuCWU)
+- [Siamese Network by Andrew Ng](https://www.youtube.com/watch?v=6jfw8MuKwpI)
+- [Triplet Loss by Andrew Ng](https://www.youtube.com/watch?v=d2XB5-tuCWU)
 - [More on Triplet Loss](https://omoindrot.github.io/triplet-loss)
 - [FaceNet Paper Discussion](https://youtu.be/w--c0qG9MCc)
 
-## Papers
+### Papers
 - [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)
 - [DeepFace: Closing the Gap to Human-Level Performance in Face Verification](https://www.cs.toronto.edu/~ranzato/publications/taigman_cvpr14.pdf)
 
-## Resources
+### Resources
 - [Pre-trained FaceNet Implemented using TensorFlow](https://github.com/davidsandberg/facenet)
 - [VGGFace2: a large-scale face recognition dataset](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/)
+
+## Training Dataset
+- [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/)
