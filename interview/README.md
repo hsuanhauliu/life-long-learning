@@ -10,6 +10,7 @@
 
 #### Online Articles
 - [A Pinterest Engineering guide to technical interviews](https://medium.com/pinterest-engineering/a-pinterest-engineering-guide-to-technical-interviews-1c2471c2d139)
+- [Microsoft Interview Q&A](https://careers.microsoft.com/students/us/en/faq)
 - [GeeksforGeeks - Company Preparation](https://www.geeksforgeeks.org/company-preparation/)
 
 

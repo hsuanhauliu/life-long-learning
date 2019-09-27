@@ -17,6 +17,7 @@
   - [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
   - [Deep Learning in Computer Vision](https://www.coursera.org/learn/deep-learning-in-computer-vision)
   - [Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks#)
+- [Zeldatech](https://www.zeldatech.com/): AI and machine learning resource platform.
 
 ### Other Wonderful Resources
 - [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary/): a machine learning word dictionary.
