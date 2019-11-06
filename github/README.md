@@ -113,3 +113,28 @@ git rm --cached -r <myFile>
 ```
 
 Reference: [Stack Overflow](https://stackoverflow.com/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste)
+
+#### Remove local files
+```
+# check what files will be removed
+git clean -n
+
+# remove the files that are listed in the message from entering the command above
+git clean -f
+
+# remove untracked directories
+git clean -fd
+
+# remove ignored files as well
+git clean -fX
+
+# remove both untracked and ignored files
+git clean -fx
+```
+
+
+## .gitignore
+Git ignore is a way to tell Git to ignore local files.
+This is helpful when you have files that you don't want to upload to the cloud (i.e. config files, test files, etc.).
+
+To do this, create a **.gitignore** file in the project root directory and type in the file names you wish to ignore. Github provides a large amount of sample gitignore files which you can find [here](https://github.com/github/gitignore).
