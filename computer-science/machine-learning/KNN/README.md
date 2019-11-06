@@ -24,4 +24,4 @@ The program will then query for a set of x and y value. After the user has input
 - The program only assumes 2 categories ('g' label for green color and 'b' for blue).
 
 ### Screenshot:
-![screenshot](screenshot.jpg "screenshot")
+![screenshot](imgs/screenshot.jpg "screenshot")

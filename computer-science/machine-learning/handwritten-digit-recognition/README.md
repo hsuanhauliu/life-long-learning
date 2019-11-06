@@ -26,6 +26,6 @@ python HDR.py
 ```
 
 ### Screenshot:
-![screenshot](screenshot1.jpg "screenshot")
+![screenshot](imgs/screenshot-1.jpg "screenshot")
 
-![screenshot](screenshot2.jpg "screenshot")
+![screenshot](imgs/screenshot-2.jpg "screenshot")

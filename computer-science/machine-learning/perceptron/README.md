@@ -3,7 +3,7 @@ A simple demonstration of perceptron. Read why perceptron works [here](https://h
 
 ## Screenshot
 ### Sample Data
-![screenshot](https://github.com/hsuanhauliu/coding-practice/blob/master/machine-learning/perceptron/screenshot.jpg "screenshot")
+![screenshot](imgs/screenshot.jpg "screenshot")
 
 ### Result
-![screenshot](screenshot2.jpg "screenshot")
+![screenshot](imgs/screenshot2.jpg "screenshot")

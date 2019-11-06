@@ -2,4 +2,4 @@
 A simple demonstration of gradient descent technique.
 
 ## Screenshot
-![screenshot](screenshot.jpg "screenshot")
+![screenshot](imgs/screenshot.jpg "screenshot")

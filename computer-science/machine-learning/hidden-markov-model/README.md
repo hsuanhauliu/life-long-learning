@@ -2,4 +2,4 @@
 This was a quick exercise of Hidden Markov Model problem. Predict the weather based on limited information using Viterbi algorithm.
 
 ## Screenshot
-![screenshot](screenshot.jpg "screenshot")
+![screenshot](imgs/screenshot.jpg "screenshot")

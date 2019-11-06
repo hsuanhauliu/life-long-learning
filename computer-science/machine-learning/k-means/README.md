@@ -4,8 +4,8 @@ In this exercise, I will go through the famous Lloyd's algorithm step by step an
 ## Screenshots
 Initial data:
 
-![screenshot](screenshot-1.jpg "screenshot")
+![screenshot](imgs/screenshot-1.jpg "screenshot")
 
 After running the algorithm:
 
-![screenshot](screenshot-2.jpg "screenshot")
+![screenshot](imgs/screenshot-2.jpg "screenshot")

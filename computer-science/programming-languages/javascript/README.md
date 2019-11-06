@@ -10,15 +10,15 @@ No installation is required. Most, if not all, modern search engines can run Jav
 ## Environment
 There are many setups or workflows one can use for JavaScript development. The most common and simplest approach would be using a HTML file and display it on your search engine.
 
-![screenshot](screenshots/screenshot1.png "search engine example")
+![screenshot](imgs/screenshot1.png "search engine example")
 
 There are online coding environments for JS development too, such as [JSFiddle](https://jsfiddle.net/) and [CodePen](https://codepen.io/pen/).
 
-![screenshot](screenshots/screenshot2.png "codepen example")
+![screenshot](imgs/screenshot2.png "codepen example")
 
 The easiest approach that I personally like the most would be using [Node.js](https://nodejs.org/en/), which allows you to run your JS code in the terminal.
 
-![screenshot](screenshots/screenshot3.png "nodejs example")
+![screenshot](imgs/screenshot3.png "nodejs example")
 
 ## Basics
 ### Comment
