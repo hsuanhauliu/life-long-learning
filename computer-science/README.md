@@ -1,5 +1,3 @@
-<div align=center>
-
 # Computer Science Notes
 
 |   | Subject                    |
@@ -11,5 +9,3 @@
 | 5 | Deep Learning              |
 | 6 | Computer Vision            |
 | 7 | Image and Video Processing |
-
-</div>
