@@ -1,8 +1,0 @@
-# English letters
-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-
-# Numbers
-0123456789
-
-# Special characters
-!@#$%^&*()_
